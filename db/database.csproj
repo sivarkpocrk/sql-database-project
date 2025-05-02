@@ -1,0 +1,14 @@
+<Project Sdk="MSBuild.Sdk.SqlProj/3.1.2">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <SqlServerVersion>Sql150</SqlServerVersion>
+    <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    <Name>database</Name>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Build Include="schema/**/*.sql" />
+    <Build Include="dbo/types/**/*.sql" />
+    <Build Include="dbo/storedprocedures/**/*.sql" />
+  </ItemGroup>
+</Project>
